@@ -1,5 +1,4 @@
 use std::{
-    clone,
     marker::PhantomData,
     ops::Deref,
     sync::atomic::{AtomicU32, AtomicU64, Ordering},
@@ -201,6 +200,7 @@ pub struct ThrasheReport {
     spec: CacheSpec,
 }
 
+/// Wrapper type that records dereferences in a cache emulation
 pub struct Thrashe<T, C: CacheProvider = GlobalCache> {
     inner: T,
     _marker: PhantomData<C>,

@@ -2,6 +2,12 @@
 name = "thrashe"
 version = "0.1.0"
 edition = "2024"
+authors = ["Raphael Darley"]
+license = "MIT OR Apache-2.0"
+description = "A cache performance analytic tool"
+homepage = "https://github.com/RaphaelDarley/thrashe"
+repository = "https://github.com/RaphaelDarley/thrashe"
+readme = "README.md"
 
 [dependencies]
 paste = { optional = true, version = "1.0.15" }
