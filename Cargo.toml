@@ -1,0 +1,11 @@
+[package]
+name = "thrashe"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+paste = { optional = true, version = "1.0.15" }
+
+[features]
+default = ["convenience_types"]
+convenience_types = ["paste"]
